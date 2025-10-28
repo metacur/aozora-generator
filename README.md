@@ -11,22 +11,23 @@
 - 著名人による帯コメント風の文章
 
 # Prerequisites
-Python
+Python<br />
 OpenAI API Key
 
 # Requirements
-Flask
-openai
-requests
-beautifulsoup4
-render_template
-jsonify
-chardet
+Flask<br />
+openai<br />
+requests<br />
+beautifulsoup4<br />
+render_template<br />
+jsonify<br />
+chardet<br />
 
 # USAGE
-python app.py
+python app.py<br />
 http://localhost:5000/ にアクセス
 - 作家名と作品名を選択
 - 紹介文を生成ボタンを押す
+
 
 
