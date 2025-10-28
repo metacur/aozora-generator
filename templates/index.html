@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>青空文庫の作品紹介ジェネレーター</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>📚 青空文庫の作品紹介ジェネレーター</h1>
+    <div class="summary">（紹介文の生成にはOpenAI API Keyの設定が必要です）</div>
+    <label for="author">作家名：</label>
+    <select id="author">
+      <option value="">選択してください</option>
+      {% for name, url in authors.items() %}
+        <option value="{{ url }}">{{ name }}</option>
+      {% endfor %}
+    </select>
+
+    <label for="title">作品名：</label>
+    <select id="title">
+      <option value="">先に作家を選んでください</option>
+    </select>
+
+    <button id="generate">紹介文を生成</button>
+
+    <div id="ai-result" class="result-box"></div>
+  </div>
+  <script src="../static/script.js"></script>
+</body>
+</html>
