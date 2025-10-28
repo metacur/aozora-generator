@@ -1,62 +1,32 @@
-\# Overview
+# Overview
+- 文学作品の紹介文を生成AIを使って生成するスクリプトです。
+- 作家名と作品名は青空文庫から取得しています。<br />
 
-文学作品の紹介文を生成AIを使って生成するスクリプトです。<br />
+- OpenAI API KEYの設定が必要です。<br />
+- ※※環境変数などで安全に管理してください※※<br />
 
-作家名と作品名は青空文庫から取得しています。<br /><br />
+# 生成する紹介文とは
+- あらすじ
+- キャッチフレーズ
+- 著名人による帯コメント風の文章
 
-
-
-OpenAI API KEYの設定が必要です。<br />
-
-※※環境変数などで安全に管理してください※※<br /><br />
-
-
-
-
-
-# 生成する紹介文とは<br />
-
-\- あらすじ
-
-\- キャッチフレーズ
-
-\- 著名人による帯コメント風の文章
-
-
-
-
-
-\# Prerequisites
-
+# Prerequisites
 Python
-
 OpenAI API Key
 
-
-
-\# Requirements
-
+# Requirements
 Flask
-
 openai
-
 requests
-
 beautifulsoup4
-
-render\_template
-
+render_template
 jsonify
-
 chardet
 
-
-
-\# USAGE
-
+# USAGE
 python app.py
+http://localhost:5000/ にアクセス
+- 作家名と作品名を選択
+- 紹介文を生成ボタンを押す
 
-\- 作家名と作品名を選択
-
-\- 紹介文を生成ボタンを押す
 
